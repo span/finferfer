@@ -7,6 +7,8 @@ from datetime import datetime, timedelta, date
 
 pd.options.display.float_format = '{:,.4f}'.format
 
+plt.tight_layout(pad=1)
+
 # Inputs and Parameters
 filename = 'spx_quotedata.csv'
 
@@ -94,7 +96,8 @@ plt.xlabel('Strike', fontweight="bold")
 plt.ylabel('Spot Gamma Exposure ($ billions/1% move)', fontweight="bold")
 plt.axvline(x=spotPrice, color='r', lw=1, label="SPX Spot: " + str("{:,.0f}".format(spotPrice)))
 plt.legend()
-plt.show()
+plt.savefig(str(todayDate) + '-absolute.png')
+plt.close()
 
 # Chart 2: Absolute Gamma Exposure by Calls and Puts
 plt.grid()
@@ -107,7 +110,8 @@ plt.xlabel('Strike', fontweight="bold")
 plt.ylabel('Spot Gamma Exposure ($ billions/1% move)', fontweight="bold")
 plt.axvline(x=spotPrice, color='r', lw=1, label="SPX Spot:" + str("{:,.0f}".format(spotPrice)))
 plt.legend()
-plt.show()
+plt.savefig(str(todayDate) + '-call-put.png')
+plt.close()
 
 
 # ---=== CALCULATE GAMMA PROFILE ===---
@@ -136,9 +140,6 @@ for level in levels:
                                                          row['daysTillExp'], 0, 0, "put", row['PutOpenInt']), axis = 1)    
 
     totalGamma.append(df['callGammaEx'].sum() - df['putGammaEx'].sum())
-    print(df['ExpirationDate'])
-    print(nextExpiry)
-    print('---')
     exNxt = df.loc[df['ExpirationDate'] != nextExpiry]
     totalGammaExNext.append(exNxt['callGammaEx'].sum() - exNxt['putGammaEx'].sum())
 
@@ -163,9 +164,6 @@ zeroGamma = posStrike - ((posStrike - negStrike) * posGamma/(posGamma-negGamma))
 zeroGamma = zeroGamma[0]
 
 # Chart 3: Gamma Exposure Profile
-print(totalGamma)
-print(totalGammaExNext)
-print(totalGammaExFri)
 fig, ax = plt.subplots()
 plt.grid()
 plt.plot(levels, totalGamma, label="All Expiries")
@@ -183,5 +181,6 @@ trans = ax.get_xaxis_transform()
 plt.fill_between([fromStrike, zeroGamma], min(totalGamma), max(totalGamma), facecolor='red', alpha=0.1, transform=trans)
 plt.fill_between([zeroGamma, toStrike], min(totalGamma), max(totalGamma), facecolor='green', alpha=0.1, transform=trans)
 plt.legend()
-plt.show()
+plt.savefig(str(todayDate) + '-profile.png')
+plt.close()
 
