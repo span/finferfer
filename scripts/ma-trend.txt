@@ -1,0 +1,1 @@
+https://towardsdatascience.com/exploring-moving-averages-to-build-trend-following-strategies-in-python-bd17595e3498
