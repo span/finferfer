@@ -1,1 +1,69 @@
 https://roboticinvesting.com/2018/07/17/dual-momentum-rules-summary/
+
+https://seekingalpha.com/article/3070036-understanding-dual-relative-and-absolute-momentum
+
+Understanding Dual, Relative, And Absolute Momentum
+Apr. 14, 2015 3:36 PM ETSPY, ACWX9 Comments
+Gary Antonacci profile picture
+Gary Antonacci
+489 Followers
+
+Years ago when I first started studying momentum, two things stood out in my mind. The first was most momentum research focused on cross-sectional stock studies looking at the future performance of stocks that had been strong versus stocks that had been weak. This was what interested academics most, since abnormal profit from strong versus weak stocks was relevant to whether or not the stock market was efficient. As a check on the robustness of cross-sectional stock momentum, researchers also looked at relative strength momentum applied to other assets and asset classes. The found that momentum worked well with almost everything. Past winners consistently outperformed going forward. This prompted Fama and French, two of the founders of efficient market theory, to call momentum the premier anomaly and to say that it is pervasive.
+
+My first momentum research paper in 2011 applied relative momentum to stock market style, industry, and geographic sectors. I wanted to focus on equities because that is where risk premium and investment returns have been the highest over the long-run. I also reasoned that it would be easier to apply momentum to market indexes or sectors rather than individual stocks, and that this would have lower transaction costs than momentum applied to individual stocks.
+
+I also noticed that while relative momentum could lead to higher returns than buy-and-hold, it did little or nothing to reduce left tail risk during bear markets. In fact, bear market drawdown could be higher with relative momentum rather than without it. My first momentum paper dealt with this problem by including short and intermediate term bonds as additional asset classes. When the relative strength of stocks became less than the relative strength of short or intermediate term bonds, my model would switch into bonds. This reduced left tail risk considerably.
+
+My next research paper in 2012, "Risk Premium Harvesting through Dual Momentum," (winner of the 2012 NAAIM Wagner Award for Advances in Active Investment Management) expanded on what I had done earlier by clearly identifying two types of momentum: relative and absolute.[1]
+
+Researchers had found that both types of momentum were robust across sub-sample periods, look-back periods, and holding periods. Both types of momentum gave higher risk-adjusted returns than buy-and-hold, and both held up well in extensive out-of-sample back testing. Besides comparing and utilizing relative and absolute momentum, my 2012 paper also introduced the concept of dual momentum, a synergistic approach that benefited from the enhanced returns achieved from both forms of momentum, as well as the reduced left tail risk and lower drawdown that come from including absolute momentum.
+
+There has been a massive amount of research on relative momentum over the past 20 years. In fact, relative strength/cross-sectional momentum has been one of the most heavily researched areas in modern finance. However, until recently there has been relatively little research done on absolute momentum. My 2013 paper "Absolute Momentum: A Simple Rule-Based Strategy and Universal Trend-Following Overlay" was an attempt to help balance that mismatch. Two of my more recent blog posts have also focused on absolute momentum.
+
+The post "And the Winner is…" described an 800 year back test of a variation of absolute momentum in Greyserman and Kaminski's new book, Trend Following with Managed Futures: The Search for Crisis Alpha. The authors looked at 84 equities, fixed income, commodities, and currencies markets as they became available during the years 1200 through 2013. They established long or short equal risk sized positions based on whether prices were above or below their rolling 12-month past returns. The average annual return of this trend following strategy was 13%, with an annual volatility of 11% and a Sharpe ratio of 1.16. In contrast to this, buy-and-hold had a return of only 4.8%, volatility of 10.3%, and a Sharpe ratio of 0.47. Maximum drawdown for trend following was also significantly lower than for buy-and-hold.
+
+The "Absolute Momentum Revisited" post was my own out-of-sample research of absolute momentum on U.S. stocks back to the year 1927. Absolute momentum continued to show a higher Sharpe ratio, as well as substantially reduced volatility and maximum drawdown compared to a buy-and-hold approach. I concluded the post by saying, "Dual momentum, which uses both relative and absolute momentum, is still the premier momentum strategy for most investors, but absolute momentum may be a useful tool for some others."
+
+Before returning here to dual momentum, I would like to mention a new study by Zakamulin (2015) called "Market Timing with Moving Averages: Anatomy and Performance of Trading Rules." The author looked at absolute momentum (which he called the "momentum rule") and 5 different moving average rules, including the 10-month (200 day) simple moving average often written about and used as a trend following filter. The author applied these rules to the S&P Composite stock market index from 1870 to 2010. Estimated transaction costs were accounted for, and all models were invested in U.S. Treasury bills when not in stocks. This 140 year study is now one of the longest back tests of trend following methods, including absolute momentum.
+
+The study found that the majority of the trend following rules had better risk-adjusted out-of-sample performance than buy-and-hold. Absolute momentum was one of two trading rules that showed statistically significant outperformance. The other was a reverse exponential average. Among these rules, absolute momentum produced the best results. Before getting too enamored with absolute momentum, we need to return to the overall theme of this blog and my book, which is dual momentum.
+
+Here are the updated performance figures from 1974 through March 2015 for absolute momentum applied to the S&P 500 and MSCI All Country World Index ex-US (NASDAQ:ACWX) indexes as used in my simple Global Equities Momentum (GEM) model featured in my book and tracked on my website. The Barclays Capital U.S. Aggregate Bond Index is used as the safe harbor asset when absolute momentum exits equities. The GEM model is easy to implement, and its parameters have been validated in many academic papers.
+  	S&P500 AbsMom 	S&P500 	ACWX AbsMom 	ACWX
+Annual Return 	14.3 	12.3 	14.0 	11.6
+Annual Std Dev 	12.2 	15.4 	12.2 	17.2
+Sharpe Ratio 	0.66 	0.41 	0.64 	0.32
+Max Drawdown 	-29.6 	-51.0 	-23.1 	-57.4
+
+We see that absolute momentum gave an impressive improvement in risk-adjusted performance compared to index performance without the addition of absolute momentum.
+
+Next, we compare the performance of absolute momentum to the performance of relative momentum that switched between the S&P 500 and ACWX indexes based only on their relative strength to each other. Most importantly, we also see what happened when we combined together both relative and absolute momentum, creating what I call dual momentum.
+  	Dual Momentum 	Relative Momentum 	S&P500 AbsMom 	ACWX AbsMom
+Annual Return 	17.7 	14.7 	14.3 	14.0
+Annual Std Dev 	12.4 	15.8 	12.2 	12.2
+Sharpe Ratio 	0.89 	0.53 	0.66 	0.64
+Max Drawdown 	-17.8 	-54.6 	-29.6 	-23.1
+
+Results are hypothetical, are NOT an indicator of future results and do NOT represent returns that any investor actually attained. Indexes are unmanaged, do not reflect management or trading fees, and one cannot invest directly in an index. Please see our GEM Performance and Disclaimer pages for more information.
+
+(
+
+Relative momentum, like absolute momentum, gave higher returns than the indexes themselves. Relative momentum, however, unlike absolute momentum, did nothing to reduce volatility or tail risk/maximum drawdown. If I were forced to choose between using relative or absolute momentum, I would choose absolute momentum. However, as I clearly point out in my book, you do not have to pick one over the other. You can use both simultaneously, and that is where the magic happens - combining absolute and relative momentum together to create dual momentum.
+
+We see that dual momentum gave us a substantial increase in average and risk-adjusted returns, compared not only to the underlying indexes, but also to relative and absolute momentum individually. In addition, dual momentum's maximum drawdown is the lowest of all.
+
+With dual momentum, the whole is greater than the sum of its parts. Dual momentum is clearly the preferred momentum strategy here with respect to large cap U.S. and non-U.S. equity indexes.[2] That is why I call this blog "Dual Momentum," and my book Dual Momentum Investing: An Innovative Strategy for Higher Returns with Lower Risk.
+
+Notes
+
+[1] Some academics refer to absolute momentum as time series or trend following momentum. However, both relative and absolute momentum are based on economic time series (asset prices), and both are trend following. Relative strength momentum looks at the trend of one asset versus other assets, while absolute momentum looks at the trend of a single asset with respect to its own past.
+
+[2] On the Performance page of my website, I show the historical and track the real time performance of four other dual momentum models.
+
+ 
+
+This article was written by
+Gary Antonacci profile picture
+Gary Antonacci
+489 Followers
+Gary Antonacci has over 40 years experience as an investment professional focusing on underexploited investment opportunities. His innovative research on momentum investing was the first place winner in
